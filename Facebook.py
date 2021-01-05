@@ -15,6 +15,6 @@ username = driver.find_element_by_name("email")
 print(username.is_displayed())
 print(username.is_enabled())
 username.send_keys("Truptishah239@yahoo.com")
-driver.find_element_by_id("pass").send_keys("TulasMaziLadki1$")
+driver.find_element_by_id("pass").send_keys("-------")
 driver.find_element_by_id("u_0_b").submit()
 
