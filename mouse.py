@@ -13,11 +13,11 @@ class pythonOrgSearch(unittest.TestCase):
     def test_search(self):
         driver = self.driver
         driver.get("https://teams.microsoft.com/")
-        driver.find_element_by_id('i0116').send_keys('rg07-r1@m365x018015.onmicrosoft.com')
+        driver.find_element_by_id('i0116').send_keys('r-------@m365x018015.onmicrosoft.com')
         time.sleep(2)
         driver.find_element_by_id('idSIButton9').click()
         time.sleep(2)
-        driver.find_element_by_id("i0118").send_keys("Summer@Winter2020!")
+        driver.find_element_by_id("i0118").send_keys("S-------------!")
         time.sleep(2)
         driver.find_element_by_id('idSIButton9').click()
         time.sleep(2)
