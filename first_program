@@ -1,0 +1,26 @@
+from selenium import webdriver
+from getpass import getpass
+import time
+from selenium.webdriver.common.keys import Keys
+PATH = r"C:\Users\v-trugan\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\chromedriver.exe"
+driver = webdriver.Chrome(PATH)
+driver.get("https://www.office.com/")
+print(driver.title)
+print(driver.current_url)
+
+#driver.find_element_by_link_text('Sign in').click()
+driver.get("https://teams.microsoft.com/")
+
+#driver.find_element_by_id("hero-banner-sign-in-to-office-365-link").click()
+
+driver.find_element_by_class_name('cb').send_keys("v-trugan@microsoft.com")
+
+status = driver.find_element_by_class_name('cb').is_displayed()
+print("displayed or not: ", status)
+
+status = driver.find_element_by_class_name('cb').is_enabled()
+print("Enabled or not: ", status)
+
+driver.find_element_by_link_text('Next').click()
+
+
