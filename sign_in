@@ -6,7 +6,7 @@ PATH = r"C:\Users\v-trugan\AppData\Roaming\Microsoft\Windows\Start Menu\Programs
 driver = webdriver.Chrome(PATH)
 driver.get("https://teams.microsoft.com/_#/conversations/19:meeting_YmE3MmJiZWEtMjBjYy00YzZjLWEyNmYtYTM3YzAzMDRlNDAz@thread.v2?ctx=chat")
 
-driver.find_element_by_class_name('cb').send_keys("v-trugan@microsoft.com")
+driver.find_element_by_class_name('cb').send_keys("v-------@microsoft.com")
 
 status = driver.find_element_by_class_name('cb').is_displayed()
 print("displayed or not: ", status)
